@@ -5,8 +5,7 @@ Design and build a production-grade observability platform for LLM apps (chatbot
 
 ---
 
-## 🛠️ Team Composition (Student-Led Project)
-
+## 🛠️ Team Composition
 | Role                   | Count | Notes                                |
 |------------------------|-------|--------------------------------------|
 | Fullstack Engineer     | 2     | Next.js + Tailwind + FastAPI         |
