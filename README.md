@@ -15,7 +15,7 @@ Design and build a production-grade observability platform for LLM apps (chatbot
 | DevOps (Optional)      | 1     | Docker, Deployment, Monitoring       |
 | UI/UX Designer         | 1     | Dashboard wireframes & visuals       |
 
-> **Tip**: Rotate team members across roles to gain well-rounded experience.
+> Rotating team members across roles to gain well-rounded experience.
 
 ---
 
