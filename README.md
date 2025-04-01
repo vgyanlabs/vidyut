@@ -1,4 +1,4 @@
-TeacherAI is a personalised generative-AI based teaching assitant
+TeacherAI is a personalised generative-AI based teaching assitant: Brain-Hack your way through the Indian Education System
 
 **User Flows:**
 
