@@ -1,4 +1,9 @@
-TeacherAI is a personalised generative-AI based teaching assitant: Brain-Hack your way through the Indian Education System
+TeacherAI is a personalised generative-AI based teaching assitant: Brain-Hack your way through the Indian Education System.
+
+Key Features:
+1. Relatable -- Via current trends memes and user personality
+2. Quick Learning -- Use the exam mode to prep for exams that require understanding of large amount of concepts in hours or days instead of weeks.
+3. Deep Understanding and filling knowledge gaps -- Deep mode allows this
 
 **User Flows:**
 
