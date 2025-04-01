@@ -38,42 +38,40 @@ TeacherAI is a personalised generative-AI based teaching assitant: Brain-Hack yo
 
 2. **User Stories:**
 
-   - As a student, I want to upload my study materials so that the app can tailor lessons to my curriculum.
+   - As a student, I want to upload my study materials so that the app can tailor lessons to my curriculum.
 
-   - As a learner aiming for high scores, I want an Exam Preparation mode that focuses on exam patterns and answering techniques.
+   - As a learner aiming for high scores, I want an Exam Preparation mode that focuses on exam patterns and answering techniques.
 
-   - As a curious learner, I want a Deep Understanding mode that delves into concepts for thorough comprehension.
+   - As a curious learner, I want a Deep Understanding mode that delves into concepts for thorough comprehension.
 
-   - As a user, I want daily incentives and engaging content like memes to keep me motivated and consistent in my studies.
+   - As a user, I want daily incentives and engaging content like memes to keep me motivated and consistent in my studies.
 
 3. **Functional Requirements:**
 
-   - **Content Management:** Support for uploading and organizing various study materials.
+   - **Content Management:** Support for uploading and organizing various study materials.
 
-   - **Adaptive Learning Engine:** AI-driven analysis of content and user performance to customize lesson plans.
+   - **Adaptive Learning Engine:** AI-driven analysis of content and user performance to customize lesson plans.
 
-   - **Mode-Specific Content Delivery:** Distinct strategies and materials for Exam Preparation and Deep Understanding modes.
+   - **Mode-Specific Content Delivery:** Distinct strategies and materials for Exam Preparation and Deep Understanding modes.
 
-   - **Gamification Features:** Implementation of flashcards, daily check-ins, memes, achievements, and leaderboards to enhance user engagement.
+   - **Gamification Features:** Implementation of flashcards, daily check-ins, memes, achievements, and leaderboards to enhance user engagement.
 
 4. **Non-Functional Requirements:**
 
-   - **Scalability:** Handle a growing number of users and content without performance degradation.
+   - **Scalability:** Handle a growing number of users and content without performance degradation.
 
-   - **Usability:** Intuitive interface accommodating users with varying technical proficiencies.
+   - **Usability:** Intuitive interface accommodating users with varying technical proficiencies.
 
-   - **Security:** Ensure the confidentiality and integrity of user-uploaded content and personal data.
+   - **Security:** Ensure the confidentiality and integrity of user-uploaded content and personal data
 
 5. **Assumptions and Constraints:**
 
    - **Assumptions:** Users have access to digital devices and the internet; uploaded content is primarily in English or regional languages supported by the app.
 
-   - **Constraints:** Compliance with local educational standards and data protection regulations.
+   - **Constraints:** Compliance with local educational standards and data protection regulations
 
 6. **Appendices:**
 
-   - **User Interface Mockups:** Visual representations of key screens and interactions.
+   - **User Interface Mockups:** Visual representations of key screens and interactions
 
-   - **Glossary:** Definitions of terms and acronyms used in the document.
-
-By detailing these user flows and requirements, the development team can create an application that effectively personalizes education and maintains high user engagement through gamification. 
+   - **Glossary:** Definitions of terms and acronyms used in the document
