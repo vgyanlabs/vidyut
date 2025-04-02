@@ -72,14 +72,4 @@ Contribution
 	1.	Fork the repo
 	2.	Create a new branch (git checkout -b feature/your-feature)
 	3.	Commit your changes (git commit -am 'Add new feature')
-	4.	Push and create a PR
-
-⸻
-
-License
-
-MIT License
-
-⸻
-
-Let me know if you want badges, project goals, or automation info added.
+	4.	Push and create 
