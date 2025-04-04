@@ -1,6 +1,12 @@
 ![EvaluationService](https://github.com/user-attachments/assets/1e7dda77-3585-43c9-addf-e87b444822f3)
 
 
+# Glossary
+
+1. Student State Service: This service will hold the current state of the students knowledge w.r.t to a particular topic -- That is, what all topics they have studied, how many are left to study, from the topics he studied how many he gave quizzes on and got correct answer, what are his gaps from the topic he studied, if there
+is a repeated pattern on failing in certain topics bring out the root cause... like algebra is weak need to revisit.
+
+
 Note: We already have the frontend of this quiz module and even the knowledgebase module, this document primarly focuses on the backend implementation of these things. As of now what you see on the app is only the frontend
 
 # Technical PRD: Adaptive Quiz Generation Module
