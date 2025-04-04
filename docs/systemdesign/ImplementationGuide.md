@@ -1,4 +1,4 @@
-Perfect. I’ll implement a complete Python FastAPI backend for the Evaluation Module with the following features:
+# Features
 - PDF ingestion and knowledge extraction module
 - Mock LLM responses for question generation
 - Adaptive quiz engine with mastery tracking
