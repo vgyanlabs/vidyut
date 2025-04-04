@@ -6,7 +6,7 @@ import { BookOpen, Brain, Database } from "lucide-react"
 export default function Home() {
   return (
     <div className="container px-4 py-8 md:px-6 md:py-12">
-      <h1 className="mb-6 text-3xl font-bold tracking-tight">Welcome to StudyPro</h1>
+      <h1 className="mb-6 text-3xl font-bold tracking-tight">Welcome</h1>
       <p className="mb-8 text-muted-foreground">Choose a learning mode to get started with your exam preparation</p>
 
       <div className="grid gap-6 md:grid-cols-3">
