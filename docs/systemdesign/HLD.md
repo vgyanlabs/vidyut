@@ -1,6 +1,8 @@
 ![EvaluationService](https://github.com/user-attachments/assets/1e7dda77-3585-43c9-addf-e87b444822f3)
 
 
+Note: We already have the frontend of this quiz module and even the knowledgebase module, this document primarly focuses on the backend implementation of these things. As of now what you see on the app is only the frontend
+
 # Technical PRD: Adaptive Quiz Generation Module
 
 ## Overview  
