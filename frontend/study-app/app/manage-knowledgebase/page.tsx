@@ -56,7 +56,7 @@ export default function ManageKnowledgebase() {
   }
 
   return (
-    <div className="container px-4 py-8 md:px-6 md:py-12">
+    <div className="container mx-auto px-4 py-8 md:px-6 md:py-12 flex flex-col items-center text-center">
       <h1 className="mb-6 text-3xl font-bold tracking-tight">Manage Knowledgebase</h1>
       <p className="mb-8 text-muted-foreground">
         Upload your study materials to generate personalized quizzes and tutorials
@@ -142,9 +142,10 @@ export default function ManageKnowledgebase() {
                   <h3 className="mb-2 text-xl font-medium">No files uploaded yet</h3>
                   <p className="mb-4 text-muted-foreground">Upload your study materials to get started</p>
                   <Button asChild variant="outline">
-                    <a href="#" onClick={() => document.querySelector('[value="upload"]')?.click()}>
-                      Upload Files
-                    </a>
+                  <a href="#" onClick={() => (document.querySelector('[value="upload"]') as HTMLElement)?.click()}>
+  Upload Files
+</a>
+
                   </Button>
                 </div>
               ) : (
