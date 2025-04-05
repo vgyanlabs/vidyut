@@ -40,7 +40,7 @@ Please refrain from pushing directly to the `main` branch. Always create a new b
 
 --------------------------
 
-## 📈 Team Roles and Responsibilities - Marketing and Sales Mode
+## 📈 Team Roles and Responsibilities - Marketing and Sales Mode | First steps in this area will begin by May 30th
 *Add your names and make a PR based on your interest.*
 
 ### 🏆 Leadership:
