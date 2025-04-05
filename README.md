@@ -1,28 +1,28 @@
 ## Warning
 **Do not push directly to the `main` branch. Always create a new branch from `main`, make your changes, and then create a Pull Request (PR) for review.**
+--------------------------
 
 ## Team Roles and Responsibilities - Engineering Mode
 
+### Leadership:
+- **Muzammil**: Technical and Business architect.
+- **Chirag**: Data and Business architect. 
+
 ### Generative AI:
-- **Muzammil**: Responsible for managing the LLM Infrastructure and training the models
-- **Chirag**: Same as above with high focus on maintaining Data Quality and data pipelines that gracefully fail in disasters. 
+- **Role Empty**
 
 ### Frontend
-- **Muzammil**: Responsible for leading UI development
 - **Shravani**: Responsible for developing the user interface and ensuring the application is visually appealing and user-friendly.
 
 ### Backend
-- **Muzammil**: Responsible for leading backend development
 - **Yashas**: Handles server-side logic, database integration, and API development.
 - **Vijay**: Works on server-side logic and database integration.
 
 ### Data Team
-- **Chirag**: Responsible for leading Data development (But has to focus on learning FastAPI a bit himself)
 - **Vishwanath**: Manages data collection, preprocessing, and ensures data quality.
 - **Vijay**: Supports data-related tasks and backend development.
 
 ### Market Research & UX
-- **Muzammil**: Responsible for leading Product development.
 - **Tejaswini**: Conducts market research, gathers user feedback, and enhances user experience.
 - **Vishwanath**: Assists with market research and user experience improvements.
 
@@ -30,25 +30,30 @@
 - **Disha**: Ensure that the software is of top quality, point out issues. Write Dev Ops pipelines. In future also do Automation Testing
 - **Bhumika**: Ensure that the software is of top quality, point out issues. Write Dev Ops pipelines. In future also do Automation Testing
 
-## Project Details
-This project aims to develop an AI-powered teacher assistant tool. The main features include:
-- **Quiz Generation**: Generate quiz questions using fine-tuned machine learning models.
-- **Data Management**: Efficient handling and preprocessing of educational datasets.
-- **User Interface**: A user-friendly interface for educators to interact with the AI tool.
-- **API Development**: Backend services to support the frontend application and machine learning models.
+--------------------------
 
 ## Team Roles and Responsibilities - Marketing and Sales Model: Unallocated, you can add your names and make a PR based on interest
 
+### Leadership:
+- **Muzammil**: Technical and Business architect.
+- **Chirag**: Data and Business architect. 
+
 ### Social Media Accounts Management - Copywriting, Caption Creation, Understanding Virality, Audience Analytics
+- **Role Empty**
 
 ### Video Editor and Reel Producer - If you are good at making reels plus point if you know how to use video editing softwares
+- **Role Empty**
 
 ### Poster, Graphics, AD Content Creator - As mentioned, plus point if you know canva or photoshop
+- **Role Empty**
 
 ### Reel Actor - If we make reels we need humans to act in it
+- **Role Empty**
 
 ### Sales Specialist + Community Manager + Collaborations - By hook or crook make people use our app
+- **Role Empty**
 
+--------------------------
 
 ## Project Details
 This project aims to develop an AI-powered teacher assistant tool. The main features include:
@@ -56,6 +61,8 @@ This project aims to develop an AI-powered teacher assistant tool. The main feat
 - **Data Management**: Efficient handling and preprocessing of educational datasets.
 - **User Interface**: A user-friendly interface for educators to interact with the AI tool.
 - **API Development**: Backend services to support the frontend application and machine learning models.
+
+--------------------------
 
 ## Additional Information
 For more detailed information about the project, refer to the corresponding sections in the repository, such as the `backend/llm/README.md` file for data collection and preprocessing scripts.
