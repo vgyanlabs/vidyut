@@ -3,6 +3,10 @@
 
 ## Team Roles and Responsibilities
 
+### Generative AI:
+- **Muzammil**: Responsible for managing the LLM Infrastructure and training the models
+- **Chirag**: Same as above with high focus on maintaining Data Quality and data pipelines that gracefully fail in disasters. 
+
 ### Frontend
 - **Shravani**: Responsible for developing the user interface and ensuring the application is visually appealing and user-friendly.
 
