@@ -1,5 +1,3 @@
-# Project Team Structure
-
 ## Warning
 **Do not push directly to the `main` branch. Always create a new branch from `main`, make your changes, and then create a Pull Request (PR) for review.**
 
