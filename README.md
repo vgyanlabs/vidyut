@@ -13,22 +13,23 @@ Please refrain from pushing directly to the `main` branch. Always create a new b
 
 ### 🏆 Leadership:
 - **Prof. Yerriswamy T**: Advisor
-- **Muzammil**: Technical and Business Architect.
-- **Chirag**: Data and Business Architect. 
+- **Muzammil**: Technical and Business Architect. Leads all the teams.
+- **Chirag**: Data and Business Architect. Co-lead for all teams.
 
 ### 🤖 Generative AI:
-- Chirag & Muzammil
+- **Chirag & Muzammil**
 
 ### 🎨 Frontend Development:
 - **Shravani**: Responsible for developing the user interface and ensuring the application is visually appealing and user-friendly.
 
 ### 🛠 Backend Development:
 - **Yashas**: Manages server-side logic, database integration, and API development.
-- **Vijay**: Focuses on server-side logic and database integration.
+- **Vijay**: Manages server-side logic, database integration, and API development.
 
 ### 📊 Data Team:
-- **Vishwanath**: Oversees data collection, preprocessing, and ensures data quality.
+- **Chirag**: Oversees data collection, preprocessing, and ensures data quality.
 - **Vijay**: Assists with data-related tasks and backend development.
+- **Vishwanath**: Assists with data-related tasks and backend development.
 
 ### 🧠 Market Research & User Experience (UX):
 - **Tejaswini**: Conducts market research, gathers user feedback, and enhances user experience.
