@@ -38,6 +38,9 @@
 - **Muzammil**: Technical and Business architect.
 - **Chirag**: Data and Business architect. 
 
+### Finance and Budgeting:
+- **Role Empty**
+  
 ### Social Media Accounts Management - Copywriting, Caption Creation, Understanding Virality, Audience Analytics
 - **Role Empty**
 
