@@ -60,7 +60,3 @@ For more detailed information about the project, refer to the corresponding sect
 5. **Create a Pull Request**: Go to the repository on GitHub and create a PR for your branch to be reviewed and merged.
 
 By following these guidelines, we ensure a smooth workflow and maintain the integrity of the `main` branch.
-
----
-
-For any questions or further assistance, please contact your team lead or refer to the project documentation.
