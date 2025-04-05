@@ -1,6 +1,13 @@
-## ⚠️ Important Notice
-**Please refrain from pushing directly to the `main` branch. Always create a new branch from `main`, make your changes, and then submit a Pull Request (PR) for review.**
+# ⚠️ Important Notice
+
+Please refrain from pushing directly to the `main` branch. Always create a new branch from `main`, make your changes, and then submit a Pull Request (PR) for review.
+
+
+
 --------------------------
+
+
+
 
 ## 🚀 Team Roles and Responsibilities - Engineering Mode
 
