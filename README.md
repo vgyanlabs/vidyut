@@ -17,7 +17,7 @@ Please refrain from pushing directly to the `main` branch. Always create a new b
 - **Chirag**: Data and Business Architect. 
 
 ### 🤖 Generative AI:
-- **Role Empty**
+- Chirag & Muzammil
 
 ### 🎨 Frontend Development:
 - **Shravani**: Responsible for developing the user interface and ensuring the application is visually appealing and user-friendly.
@@ -48,22 +48,22 @@ Please refrain from pushing directly to the `main` branch. Always create a new b
 - **Chirag**: Data and Business Architect.
 
 ### 💰 Finance and Budgeting:
-- **Role Empty**
+- **Chirag & Muzammil**
   
 ### 📱 Social Media Management:
-- **Role Empty**
+- **Vishwanath**
 
 ### 🎬 Video Editor and Reel Producer:
-- **Role Empty**
+- **Vishwanath**
 
 ### 🎨 Poster, Graphics, and Ad Content Creation:
-- **Role Empty**
+- **Tejaswini**
 
 ### 🎭 Reel Actor:
 - **Role Empty**
 
 ### 🛒 Sales Specialist and Community Manager:
-- **Role Empty**
+- **Disa & Bhumika**
 
 --------------------------
 
