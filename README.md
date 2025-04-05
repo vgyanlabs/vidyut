@@ -32,7 +32,7 @@
 
 --------------------------
 
-## Team Roles and Responsibilities - Marketing and Sales Model: Unallocated, you can add your names and make a PR based on interest
+## Team Roles and Responsibilities - Marketing and Sales Mode: add your names and make a PR based on interest
 
 ### Leadership:
 - **Muzammil**: Technical and Business architect.
