@@ -1,76 +1,77 @@
-## Warning
-**Do not push directly to the `main` branch. Always create a new branch from `main`, make your changes, and then create a Pull Request (PR) for review.**
+## ⚠️ Important Notice
+**Please refrain from pushing directly to the `main` branch. Always create a new branch from `main`, make your changes, and then submit a Pull Request (PR) for review.**
 --------------------------
 
-## Team Roles and Responsibilities - Engineering Mode
+## 🚀 Team Roles and Responsibilities - Engineering Mode
 
-### Leadership:
-- **Muzammil**: Technical and Business architect.
-- **Chirag**: Data and Business architect. 
+### 🏆 Leadership:
+- **Muzammil**: Technical and Business Architect.
+- **Chirag**: Data and Business Architect. 
 
-### Generative AI:
+### 🤖 Generative AI:
 - **Role Empty**
 
-### Frontend
+### 🎨 Frontend Development:
 - **Shravani**: Responsible for developing the user interface and ensuring the application is visually appealing and user-friendly.
 
-### Backend
-- **Yashas**: Handles server-side logic, database integration, and API development.
-- **Vijay**: Works on server-side logic and database integration.
+### 🛠 Backend Development:
+- **Yashas**: Manages server-side logic, database integration, and API development.
+- **Vijay**: Focuses on server-side logic and database integration.
 
-### Data Team
-- **Vishwanath**: Manages data collection, preprocessing, and ensures data quality.
-- **Vijay**: Supports data-related tasks and backend development.
+### 📊 Data Team:
+- **Vishwanath**: Oversees data collection, preprocessing, and ensures data quality.
+- **Vijay**: Assists with data-related tasks and backend development.
 
-### Market Research & UX
+### 🧠 Market Research & User Experience (UX):
 - **Tejaswini**: Conducts market research, gathers user feedback, and enhances user experience.
-- **Vishwanath**: Assists with market research and user experience improvements.
+- **Vishwanath**: Supports market research and user experience improvements.
 
-### QA & DevOps
-- **Disha**: Ensure that the software is of top quality, point out issues. Write Dev Ops pipelines. In future also do Automation Testing
-- **Bhumika**: Ensure that the software is of top quality, point out issues. Write Dev Ops pipelines. In future also do Automation Testing
+### 🛡 Quality Assurance (QA) & DevOps:
+- **Disha**: Ensures software quality, identifies issues, writes DevOps pipelines, and will handle automation testing in the future.
+- **Bhumika**: Ensures software quality, identifies issues, writes DevOps pipelines, and will handle automation testing in the future.
 
 --------------------------
 
-## Team Roles and Responsibilities - Marketing and Sales Mode: add your names and make a PR based on interest
+## 📈 Team Roles and Responsibilities - Marketing and Sales Mode
+*Add your names and make a PR based on your interest.*
 
-### Leadership:
-- **Muzammil**: Technical and Business architect.
-- **Chirag**: Data and Business architect. 
+### 🏆 Leadership:
+- **Muzammil**: Technical and Business Architect.
+- **Chirag**: Data and Business Architect.
 
-### Finance and Budgeting:
+### 💰 Finance and Budgeting:
 - **Role Empty**
   
-### Social Media Accounts Management - Copywriting, Caption Creation, Understanding Virality, Audience Analytics
+### 📱 Social Media Management:
 - **Role Empty**
 
-### Video Editor and Reel Producer - If you are good at making reels plus point if you know how to use video editing softwares
+### 🎬 Video Editor and Reel Producer:
 - **Role Empty**
 
-### Poster, Graphics, AD Content Creator - As mentioned, plus point if you know canva or photoshop
+### 🎨 Poster, Graphics, and Ad Content Creation:
 - **Role Empty**
 
-### Reel Actor - If we make reels we need humans to act in it
+### 🎭 Reel Actor:
 - **Role Empty**
 
-### Sales Specialist + Community Manager + Collaborations - By hook or crook make people use our app
+### 🛒 Sales Specialist and Community Manager:
 - **Role Empty**
 
 --------------------------
 
-## Project Details
-This project aims to develop an AI-powered teacher assistant tool. The main features include:
-- **Quiz Generation**: Generate quiz questions using fine-tuned machine learning models.
-- **Data Management**: Efficient handling and preprocessing of educational datasets.
-- **User Interface**: A user-friendly interface for educators to interact with the AI tool.
-- **API Development**: Backend services to support the frontend application and machine learning models.
+## 📚 Project Overview
+This project aims to develop an AI-powered teacher assistant tool with the following main features:
+- **📊 Quiz Generation**: Generate quiz questions using fine-tuned machine learning models.
+- **💾 Data Management**: Efficient handling and preprocessing of educational datasets.
+- **🖥 User Interface**: A user-friendly interface for educators to interact with the AI tool.
+- **🔌 API Development**: Backend services to support the frontend application and machine learning models.
 
 --------------------------
 
-## Additional Information
+## 📄 Additional Information
 For more detailed information about the project, refer to the corresponding sections in the repository, such as the `backend/llm/README.md` file for data collection and preprocessing scripts.
 
-### Usage Instructions
+### 📝 Usage Instructions
 1. **Clone the Repository**:
     ```bash
     git clone https://github.com/DarthMuzammil/TeacherAI.git
