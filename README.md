@@ -5,6 +5,7 @@
 ## 🚀 Team Roles and Responsibilities - Engineering Mode
 
 ### 🏆 Leadership:
+- **Prof. Yerriswamy T**: Advisor
 - **Muzammil**: Technical and Business Architect.
 - **Chirag**: Data and Business Architect. 
 
