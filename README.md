@@ -36,8 +36,8 @@ Please refrain from pushing directly to the `main` branch. Always create a new b
 - **Vishwanath**: Supports market research and user experience improvements.
 
 ### 🛡 Quality Assurance (QA) & DevOps & Scrum:
-- **Disha**: Ensures software quality, identifies issues, writes DevOps pipelines, and will handle automation testing in the future.
-- **Bhumika**: Ensures software quality, identifies issues, writes DevOps pipelines, and will handle automation testing in the future.
+- **Disha**: Ensures software quality, identifies issues, writes DevOps pipelines, and will handle automation testing in the future, and drive Scrum. Scrum responsbilities mentioned below
+- **Bhumika**: Ensures software quality, identifies issues, writes DevOps pipelines, and will handle automation testing in the future and drive Scrum. Scrum responsbilities mentioned below
 - **Scrum Responsibilties**: Ensure everyone is aware of any major shifts into the project, make sure we are having regular meetings, take full responsibility of making sure everyone is aligned with Leadership strategy. During daily update meeting or any meeting, drive the meeting by defining the meeting agenda, taking everyone updates, revisiting important reminders majot shifts etc mentioned on the Github Project as comments. Keep keen eye on how the project is moving. 
 
 
