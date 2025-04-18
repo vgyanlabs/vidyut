@@ -230,7 +230,7 @@ export default function RoadmapsPage() {
   }
 
   // Handle deleting a roadmap
-  const handleDeleteRoadmap = (id: string) => {
+  const handleDeleteRoadmap = (id) => {
     setRoadmaps(roadmaps.filter((roadmap) => roadmap.id !== id))
   }
 

@@ -1,7 +1,5 @@
 "use client"
 
-import type React from "react"
-
 import { useState, useCallback, useRef } from "react"
 import ReactFlow, {
   MiniMap,
@@ -10,12 +8,8 @@ import ReactFlow, {
   useNodesState,
   useEdgesState,
   addEdge,
-  type Node,
-  type Edge,
-  type Connection,
   MarkerType,
   Panel,
-  type NodeChange,
   ReactFlowProvider,
   useReactFlow,
 } from "reactflow"
@@ -44,7 +38,7 @@ const nodeTypes = {
 }
 
 // Sample knowledge base items
-const initialNodes: Node[] = [
+const initialNodes = [
   {
     id: "1",
     type: "custom",
@@ -114,7 +108,7 @@ const initialNodes: Node[] = [
 ]
 
 // Sample connections between knowledge base items
-const initialEdges: Edge[] = [
+const initialEdges = [
   {
     id: "e1-2",
     source: "1",
@@ -180,7 +174,7 @@ const initialEdges: Edge[] = [
 function KnowledgeGraphFlow() {
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes)
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges)
-  const [selectedNode, setSelectedNode] = useState<Node | null>(null)
+  const [selectedNode, setSelectedNode] = useState(null)
   const [isAddingNode, setIsAddingNode] = useState(false)
   const [isConnecting, setIsConnecting] = useState(false)
   const [newNodeData, setNewNodeData] = useState({
@@ -190,7 +184,7 @@ function KnowledgeGraphFlow() {
   })
   const [searchTerm, setSearchTerm] = useState("")
   const reactFlowInstance = useReactFlow()
-  const connectingNodeId = useRef<string | null>(null)
+  const connectingNodeId = useRef(null)
 
   // Filter nodes based on search term
   const filteredNodes = searchTerm
@@ -202,13 +196,13 @@ function KnowledgeGraphFlow() {
     : nodes
 
   // Handle node click
-  const onNodeClick = useCallback((event: React.MouseEvent, node: Node) => {
+  const onNodeClick = useCallback((event, node) => {
     setSelectedNode(node)
   }, [])
 
   // Handle connection
   const onConnect = useCallback(
-    (params: Edge | Connection) => {
+    (params) => {
       setEdges((eds) =>
         addEdge(
           {
@@ -247,7 +241,7 @@ function KnowledgeGraphFlow() {
     if (!newNodeData.label) return
 
     const newId = (nodes.length + 1).toString()
-    const newNode: Node = {
+    const newNode = {
       id: newId,
       type: "custom",
       data: {
@@ -277,7 +271,7 @@ function KnowledgeGraphFlow() {
     const edgesToRemove = edges.filter((edge) => edge.source === selectedNode.id || edge.target === selectedNode.id)
 
     // Update connection count for connected nodes
-    const connectedNodeIds = new Set<string>()
+    const connectedNodeIds = new Set()
     edgesToRemove.forEach((edge) => {
       if (edge.source !== selectedNode.id) connectedNodeIds.add(edge.source)
       if (edge.target !== selectedNode.id) connectedNodeIds.add(edge.target)
@@ -313,10 +307,10 @@ function KnowledgeGraphFlow() {
   }
 
   // Handle completing a connection
-  const handleCompleteConnection = (targetNode: Node) => {
+  const handleCompleteConnection = (targetNode) => {
     if (!connectingNodeId.current || connectingNodeId.current === targetNode.id) return
 
-    const newEdge: Edge = {
+    const newEdge = {
       id: `e${connectingNodeId.current}-${targetNode.id}`,
       source: connectingNodeId.current,
       target: targetNode.id,
@@ -359,7 +353,7 @@ function KnowledgeGraphFlow() {
   }
 
   // Handle node changes (position, etc.)
-  const handleNodesChange = (changes: NodeChange[]) => {
+  const handleNodesChange = (changes) => {
     // If we're in connecting mode and a node is selected, check if it's a connection completion
     if (isConnecting && connectingNodeId.current) {
       const selectChange = changes.find((change) => change.type === "select" && change.selected === true)

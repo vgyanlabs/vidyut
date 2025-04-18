@@ -1,7 +1,5 @@
 "use client"
 
-import type React from "react"
-
 import { useState } from "react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -13,14 +11,14 @@ import { Upload, FileText, Book, FileUp, Trash2 } from "lucide-react"
 import Link from "next/link"
 
 export default function ManageKnowledgebase() {
-  const [files, setFiles] = useState<File[]>([])
+  const [files, setFiles] = useState([])
   const [uploadedFiles, setUploadedFiles] = useState([
     { id: 1, name: "Physics Textbook.pdf", type: "book", size: "12.5 MB", date: "2023-04-15" },
     { id: 2, name: "Chemistry Notes.docx", type: "notes", size: "2.3 MB", date: "2023-04-10" },
     { id: 3, name: "Math Lesson Plan.pdf", type: "lesson", size: "4.7 MB", date: "2023-04-05" },
   ])
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileChange = (e) => {
     if (e.target.files) {
       setFiles(Array.from(e.target.files))
     }
@@ -40,11 +38,11 @@ export default function ManageKnowledgebase() {
     setFiles([])
   }
 
-  const handleDelete = (id: number) => {
+  const handleDelete = (id) => {
     setUploadedFiles(uploadedFiles.filter((file) => file.id !== id))
   }
 
-  const getFileIcon = (type: string) => {
+  const getFileIcon = (type) => {
     switch (type) {
       case "book":
         return <Book className="h-4 w-4" />
@@ -142,10 +140,9 @@ export default function ManageKnowledgebase() {
                   <h3 className="mb-2 text-xl font-medium">No files uploaded yet</h3>
                   <p className="mb-4 text-muted-foreground">Upload your study materials to get started</p>
                   <Button asChild variant="outline">
-                  <a href="#" onClick={() => (document.querySelector('[value="upload"]') as HTMLElement)?.click()}>
-  Upload Files
-</a>
-
+                    <a href="#" onClick={() => document.querySelector('[value="upload"]')?.click()}>
+                      Upload Files
+                    </a>
                   </Button>
                 </div>
               ) : (

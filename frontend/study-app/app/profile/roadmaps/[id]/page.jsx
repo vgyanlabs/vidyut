@@ -34,7 +34,7 @@ import {
 } from "lucide-react"
 import RoadmapVisualizer from "@/components/roadmap/roadmap-visualizer"
 
-// Sample roadmap data (same as in the previous file)
+// Sample roadmap data
 const initialRoadmaps = [
   {
     id: "physics-101",
@@ -48,7 +48,7 @@ const initialRoadmaps = [
         id: "mechanics",
         title: "Mechanics",
         description: "Study of motion and forces",
-        status: "completed", // completed, in-progress, recommended, locked
+        status: "completed",
         quizScore: 92,
         children: ["thermo"],
       },
@@ -197,25 +197,25 @@ const initialRoadmaps = [
 ]
 
 // Helper function to calculate progress
-const calculateProgress = (nodes: any[]) => {
+const calculateProgress = (nodes) => {
   if (nodes.length === 0) return 0
 
   const completedNodes = nodes.filter((node) => node.status === "completed").length
   return Math.round((completedNodes / nodes.length) * 100)
 }
 
-export default function RoadmapDetailPage({ params }: { params: { id: string } }) {
+export default function RoadmapDetailPage({ params }) {
   const router = useRouter()
-  const [roadmap, setRoadmap] = useState<any>(null)
+  const [roadmap, setRoadmap] = useState(null)
   const [isEditing, setIsEditing] = useState(false)
-  const [editedRoadmap, setEditedRoadmap] = useState<any>(null)
+  const [editedRoadmap, setEditedRoadmap] = useState(null)
   const [isAddingNode, setIsAddingNode] = useState(false)
   const [newNode, setNewNode] = useState({
     title: "",
     description: "",
     prerequisite: "",
   })
-  const [selectedNode, setSelectedNode] = useState<any>(null)
+  const [selectedNode, setSelectedNode] = useState(null)
   const [isEditingNode, setIsEditingNode] = useState(false)
   const [activeTab, setActiveTab] = useState("visual")
 
@@ -256,7 +256,7 @@ export default function RoadmapDetailPage({ params }: { params: { id: string } }
     const nodeId = newNode.title.toLowerCase().replace(/\s+/g, "-")
 
     // Find the prerequisite node
-    const prerequisiteNode = editedRoadmap.nodes.find((node: any) => node.id === newNode.prerequisite)
+    const prerequisiteNode = editedRoadmap.nodes.find((node) => node.id === newNode.prerequisite)
 
     if (prerequisiteNode) {
       // Add the new node
@@ -273,7 +273,7 @@ export default function RoadmapDetailPage({ params }: { params: { id: string } }
       ]
 
       // Update the prerequisite node's children
-      const updatedNodesWithLinks = updatedNodes.map((node: any) => {
+      const updatedNodesWithLinks = updatedNodes.map((node) => {
         if (node.id === newNode.prerequisite) {
           return {
             ...node,
@@ -302,7 +302,7 @@ export default function RoadmapDetailPage({ params }: { params: { id: string } }
   const handleUpdateNode = () => {
     if (!selectedNode) return
 
-    const updatedNodes = editedRoadmap.nodes.map((node: any) => {
+    const updatedNodes = editedRoadmap.nodes.map((node) => {
       if (node.id === selectedNode.id) {
         return selectedNode
       }
@@ -319,14 +319,14 @@ export default function RoadmapDetailPage({ params }: { params: { id: string } }
   }
 
   // Handle deleting a node
-  const handleDeleteNode = (nodeId: string) => {
+  const handleDeleteNode = (nodeId) => {
     // Remove the node
-    const filteredNodes = editedRoadmap.nodes.filter((node: any) => node.id !== nodeId)
+    const filteredNodes = editedRoadmap.nodes.filter((node) => node.id !== nodeId)
 
     // Remove references to the node from other nodes' children
-    const updatedNodes = filteredNodes.map((node: any) => ({
+    const updatedNodes = filteredNodes.map((node) => ({
       ...node,
-      children: node.children.filter((childId: string) => childId !== nodeId),
+      children: node.children.filter((childId) => childId !== nodeId),
     }))
 
     setEditedRoadmap({
@@ -341,7 +341,7 @@ export default function RoadmapDetailPage({ params }: { params: { id: string } }
   }
 
   // Get node status icon
-  const getNodeStatusIcon = (status: string) => {
+  const getNodeStatusIcon = (status) => {
     switch (status) {
       case "completed":
         return <CheckCircle2 className="h-4 w-4 text-green-500" />
@@ -421,7 +421,7 @@ export default function RoadmapDetailPage({ params }: { params: { id: string } }
 
       <TabsContent value="list" className="mt-0">
         <div className="space-y-4">
-          {(isEditing ? editedRoadmap.nodes : roadmap.nodes).map((node: any) => (
+          {(isEditing ? editedRoadmap.nodes : roadmap.nodes).map((node) => (
             <Card
               key={node.id}
               className={`border-l-4 ${
@@ -458,9 +458,9 @@ export default function RoadmapDetailPage({ params }: { params: { id: string } }
                   <div className="mt-2">
                     <span className="text-sm font-medium">Leads to: </span>
                     <div className="flex flex-wrap gap-1 mt-1">
-                      {node.children.map((childId: string) => {
+                      {node.children.map((childId) => {
                         const childNode = (isEditing ? editedRoadmap.nodes : roadmap.nodes).find(
-                          (n: any) => n.id === childId,
+                          (n) => n.id === childId,
                         )
                         return childNode ? (
                           <Badge key={childId} variant="outline" className="flex items-center gap-1">
@@ -604,7 +604,7 @@ export default function RoadmapDetailPage({ params }: { params: { id: string } }
                   <SelectValue placeholder="Select a prerequisite topic" />
                 </SelectTrigger>
                 <SelectContent>
-                  {editedRoadmap?.nodes.map((node: any) => (
+                  {editedRoadmap?.nodes.map((node) => (
                     <SelectItem key={node.id} value={node.id}>
                       {node.title}
                     </SelectItem>

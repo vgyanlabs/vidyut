@@ -1,5 +1,4 @@
-import type React from "react"
-import type { Metadata } from "next"
+import React from "react"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -7,17 +6,13 @@ import Header from "@/components/header"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "StudyPro - Your Exam Preparation Assistant",
   description: "Prepare for exams efficiently with personalized learning paths",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
@@ -31,7 +26,5 @@ export default function RootLayout({
     </html>
   )
 }
-
-
 
 import './globals.css'
