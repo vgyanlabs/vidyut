@@ -34,6 +34,22 @@ import {
 } from "lucide-react"
 import RoadmapVisualizer from "@/components/roadmap/roadmap-visualizer"
 
+
+
+/*
+https://teacher-ai-lemon.vercel.app/profile/roadmaps/[id]
+
+Where id is the id of the roadmap. an interger for example: https://teacher-ai-lemon.vercel.app/profile/roadmaps/1
+
+OR
+
+https://localhost:3000/profile/roadmaps/[id]
+
+Where id is the id of the roadmap. an interger for example: https://localhost:3000/profile/roadmaps/1
+
+This is the page that the user sees when they click on a roadmap from the profile page.
+*/
+
 // Sample roadmap data
 const initialRoadmaps = [
   {

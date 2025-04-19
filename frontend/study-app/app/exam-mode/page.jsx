@@ -16,9 +16,9 @@ export default function ExamMode() {
   const router = useRouter()
   const [step, setStep] = useState(1)
   const [subject, setSubject] = useState("")
-  const [examDate, setExamDate] = useState<Date>()
+  const [examDate, setExamDate] = useState()
   const [duration, setDuration] = useState("")
-  const [topics, setTopics] = useState<string[]>([])
+  const [topics, setTopics] = useState([])
 
   const availableTopics = {
     mathematics: [
@@ -54,7 +54,7 @@ export default function ExamMode() {
     biology: ["Cell Biology", "Genetics", "Ecology", "Evolution", "Physiology", "Microbiology", "Botany", "Zoology"],
   }
 
-  const handleTopicToggle = (topic: string) => {
+  const handleTopicToggle = (topic) => {
     setTopics(topics.includes(topic) ? topics.filter((t) => t !== topic) : [...topics, topic])
   }
 
@@ -138,7 +138,7 @@ export default function ExamMode() {
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              {availableTopics[subject as keyof typeof availableTopics]?.map((topic) => (
+              {availableTopics[subject]?.map((topic) => (
                 <div key={topic} className="flex items-center space-x-2">
                   <Checkbox
                     id={topic}

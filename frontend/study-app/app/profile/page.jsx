@@ -10,6 +10,17 @@ import { Progress } from "@/components/ui/progress"
 import { Settings, BookOpen, BarChart4, Clock, Calendar, Rocket } from "lucide-react"
 import { ArrowRight } from "lucide-react"
 
+
+/*
+https://teacher-ai-lemon.vercel.app/profile
+
+OR
+
+https://localhost:3000/profile
+
+This is the main page of the app. It is the first page that the user sees when they open the app. on the above links
+*/
+
 export default function ProfilePage() {
   // Sample user data
   const user = {
