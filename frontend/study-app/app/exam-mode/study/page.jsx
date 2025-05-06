@@ -20,7 +20,7 @@ export default function StudyPage() {
   const [currentTopicIndex, setCurrentTopicIndex] = useState(0)
   const [currentTab, setCurrentTab] = useState("learn")
   const [quizStarted, setQuizStarted] = useState(false)
-  const [quizAnswers, setQuizAnswers] = useState<Record<number, string>>({})
+  const [quizAnswers, setQuizAnswers] = useState<Record<number>>({})
   const [quizSubmitted, setQuizSubmitted] = useState(false)
   const [timeRemaining, setTimeRemaining] = useState(3600) // 1 hour in seconds
   const [overallProgress, setOverallProgress] = useState(0)
@@ -85,13 +85,14 @@ export default function StudyPage() {
   }, [])
 
   // Format time remaining
-  const formatTime = (seconds: number) => {
+  const formatTime = (seconds) => {
     const hours = Math.floor(seconds / 3600)
     const minutes = Math.floor((seconds % 3600) / 60)
     const secs = seconds % 60
-
+  
     return `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`
   }
+  
 
   // Handle quiz submission
   const handleQuizSubmit = () => {
