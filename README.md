@@ -1,45 +1,36 @@
-![Image](https://github.com/user-attachments/assets/dea397c4-e756-4462-8abd-8bb6bd417ba2)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Here is the First logo for Vidyut where the book represents knowledge and the lightening bolt is for powering up the mind with knowledge.
+## Getting Started
 
-I am trying on some different logos also, this is the first one.
+First, run the development server:
 
-And color palette I have chosen is this.
-1. Primary Brand Color – Electric Blue
-HEX: #007BFF
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-    Emotion: Trust, intelligence, clarity
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-    Usage: Buttons, links, headers (30%)
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-2. Secondary Color – Warm Yellow
-HEX: #FFD54F
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-    Emotion: Excitement, energy, optimism
+## Learn More
 
-    Usage: Hover states, highlight boxes, cards (10%)
+To learn more about Next.js, take a look at the following resources:
 
-3. Neutral Background – Soft White
-HEX: #FAFAFA
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-   Clean, modern, easy on the eyes
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-   Usage: Backgrounds (60%)
+## Deploy on Vercel
 
-4. Supportive Color – Cool Slate Gray
-HEX: #37474F
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-    Adds contrast for text and icons
-
-    Usage: Body text, icons, footer
-
-5. Optional Accent – Aqua Cyan
-HEX: #00B8D4
-
-    Fresh, playful tone for badges or status indicators
-
-    Use sparingly (under 5%)
-
-![Image](https://github.com/user-attachments/assets/8df4172e-d609-4350-a280-aa37ec5c38f3)
-
-@DarthMuzammil @yashas010 @anjumjahan ma'am  What is your opinion?
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
