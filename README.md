@@ -1,110 +1,45 @@
-# ⚠️ Important Notice
+![Image](https://github.com/user-attachments/assets/dea397c4-e756-4462-8abd-8bb6bd417ba2)
 
-Please refrain from pushing directly to the `main` branch. Always create a new branch from `main`, make your changes, and then submit a Pull Request (PR) for review.
+Here is the First logo for Vidyut where the book represents knowledge and the lightening bolt is for powering up the mind with knowledge.
 
+I am trying on some different logos also, this is the first one.
 
+And color palette I have chosen is this.
+1. Primary Brand Color – Electric Blue
+HEX: #007BFF
 
---------------------------
+    Emotion: Trust, intelligence, clarity
 
+    Usage: Buttons, links, headers (30%)
 
+2. Secondary Color – Warm Yellow
+HEX: #FFD54F
 
+    Emotion: Excitement, energy, optimism
 
-## 🚀 Team Roles and Responsibilities - Engineering Mode
+    Usage: Hover states, highlight boxes, cards (10%)
 
-### 🏆 Leadership:
-- **Prof. Yerriswamy T**: Advisor
-- **Muzammil**: Technical and Business Architect. Leads all the teams.
-- **Chirag**: Data and Business Architect. Co-lead for all teams.
+3. Neutral Background – Soft White
+HEX: #FAFAFA
 
-### 🤖 Generative AI:
-- **Chirag & Muzammil**
+   Clean, modern, easy on the eyes
 
-### 🎨 Frontend Development:
-- **Shravani**: Responsible for developing the user interface and ensuring the application is visually appealing and user-friendly.
+   Usage: Backgrounds (60%)
 
-### 🛠 Backend Development:
-- **Yashas**: Manages server-side logic, database integration, and API development.
-- **Vijay**: Manages server-side logic, database integration, and API development.
+4. Supportive Color – Cool Slate Gray
+HEX: #37474F
 
-### 📊 Data Team:
-- **Chirag**: Oversees data collection, preprocessing, and ensures data quality.
-- **Vijay**: Assists with data-related tasks and backend development.
-- **Vishwanath**: Assists with data-related tasks and backend development.
+    Adds contrast for text and icons
 
-### 🧠 Market Research & User Experience (UX):
-- **Tejaswini**: Conducts market research, gathers user feedback, and enhances user experience.
-- **Vishwanath**: Supports market research and user experience improvements.
+    Usage: Body text, icons, footer
 
-### 🛡 Quality Assurance (QA) & DevOps & Scrum:
-- **Disha**: Ensures software quality, identifies issues, writes DevOps pipelines, and will handle automation testing in the future, and drive Scrum. Scrum responsbilities mentioned below
-- **Bhumika**: Ensures software quality, identifies issues, writes DevOps pipelines, and will handle automation testing in the future and drive Scrum. Scrum responsbilities mentioned below
-- **Scrum Responsibilties**: Ensure everyone is aware of any major shifts into the project, make sure we are having regular meetings, take full responsibility of making sure everyone is aligned with Leadership strategy. During daily update meeting or any meeting, drive the meeting by defining the meeting agenda, taking everyone updates, revisiting important reminders majot shifts etc mentioned on the Github Project as comments. Keep keen eye on how the project is moving. 
+5. Optional Accent – Aqua Cyan
+HEX: #00B8D4
 
+    Fresh, playful tone for badges or status indicators
 
---------------------------
+    Use sparingly (under 5%)
 
-## 📈 Team Roles and Responsibilities - Marketing and Sales Mode | First steps in this area will begin by May 30th
-*Add your names and make a PR based on your interest.*
+![Image](https://github.com/user-attachments/assets/8df4172e-d609-4350-a280-aa37ec5c38f3)
 
-### 🏆 Leadership:
-- **Muzammil**: Technical and Business Architect.
-- **Chirag**: Data and Business Architect.
-
-### 💰 Finance and Budgeting:
-- **Chirag & Muzammil**
-  
-### 📱 Social Media Management:
-- **Vishwanath**
-
-### 🎬 Video Editor and Reel Producer:
-- **Vishwanath**
-
-### 🎨 Poster, Graphics, and Ad Content Creation:
-- **Tejaswini**
-
-### 🎭 Reel Actor:
-- **Role Empty**
-
-### 🛒 Sales Specialist and Community Manager:
-- **Disa & Bhumika**
-
---------------------------
-
-## 📚 Project Overview
-This project aims to develop an AI-powered teacher assistant tool with the following main features:
-- **📊 Quiz Generation**: Generate quiz questions using fine-tuned machine learning models.
-- **💾 Data Management**: Efficient handling and preprocessing of educational datasets.
-- **🖥 User Interface**: A user-friendly interface for educators to interact with the AI tool.
-- **🔌 API Development**: Backend services to support the frontend application and machine learning models.
-
---------------------------
-
-## 📄 Additional Information
-For more detailed information about the project, refer to the corresponding sections in the repository, such as the `backend/llm/README.md` file for data collection and preprocessing scripts.
-
-### 📝 Usage Instructions
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/DarthMuzammil/TeacherAI.git
-    cd TeacherAI
-    ```
-
-2. **Create a New Branch**:
-    ```bash
-    git checkout -b <your-branch-name>
-    ```
-
-3. **Make Your Changes** and **Commit**:
-    ```bash
-    git add .
-    git commit -m "Your descriptive commit message"
-    ```
-
-4. **Push Your Branch**:
-    ```bash
-    git push origin <your-branch-name>
-    ```
-
-5. **Create a Pull Request**: Go to the repository on GitHub and create a PR for your branch to be reviewed and merged.
-
-By following these guidelines, we ensure a smooth workflow and maintain the integrity of the `main` branch.
+@DarthMuzammil @yashas010 @anjumjahan ma'am  What is your opinion?
