@@ -1,10 +1,8 @@
 ![Image](https://github.com/user-attachments/assets/dea397c4-e756-4462-8abd-8bb6bd417ba2)
 
-Here is the First logo for Vidyut where the book represents knowledge and the lightening bolt is for powering up the mind with knowledge.
+Logo for Vidyut where the book represents knowledge and the lightening bolt is for powering up the mind with knowledge.
 
-I am trying on some different logos also, this is the first one.
-
-And color palette I have chosen is this.
+# Color Pallette
 1. Primary Brand Color – Electric Blue
 HEX: #007BFF
 
@@ -41,5 +39,3 @@ HEX: #00B8D4
     Use sparingly (under 5%)
 
 ![Image](https://github.com/user-attachments/assets/8df4172e-d609-4350-a280-aa37ec5c38f3)
-
-@DarthMuzammil @yashas010 @anjumjahan ma'am  What is your opinion?
