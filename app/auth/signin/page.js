@@ -4,17 +4,42 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import { signIn } from 'next-auth/react';
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
   const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // TODO: Implement sign in logic
-    console.log('Sign in:', { email, password });
-    router.push('/onboarding');
+    setError('');
+
+    try {
+      const result = await signIn('credentials', {
+        email,
+        password,
+        redirect: false,
+      });
+
+      if (result.error) {
+        throw new Error(result.error);
+      }
+
+      // Get the session to check onboarding status
+      const response = await fetch('/api/auth/session');
+      const session = await response.json();
+
+      // Redirect based on onboarding status
+      if (!session.user.isOnboarded) {
+        router.push('/onboarding');
+      } else {
+        router.push('/dashboard');
+      }
+    } catch (err) {
+      setError(err.message);
+    }
   };
 
   return (
@@ -40,6 +65,11 @@ export default function SignIn() {
             </Link>
           </p>
         </div>
+        {error && (
+          <div className="bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded relative" role="alert">
+            <span className="block sm:inline">{error}</span>
+          </div>
+        )}
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="rounded-md shadow-sm space-y-4">
             <div>

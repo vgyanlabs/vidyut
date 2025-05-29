@@ -1,7 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { useSession } from 'next-auth/react';
 
 export default function Onboarding() {
   const [formData, setFormData] = useState({
@@ -9,6 +11,9 @@ export default function Onboarding() {
     topic: '',
     level: '',
   });
+  const [error, setError] = useState('');
+  const router = useRouter();
+  const { data: session, status } = useSession();
 
   const topics = [
     'Web Development',
@@ -27,6 +32,12 @@ export default function Onboarding() {
     { id: 'advanced', label: 'Advanced' },
   ];
 
+  useEffect(() => {
+    if (status === 'unauthenticated') {
+      router.push('/auth/signin');
+    }
+  }, [status, router]);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -37,9 +48,36 @@ export default function Onboarding() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // TODO: Implement onboarding logic
-    console.log('Onboarding:', formData);
+    setError('');
+
+    try {
+      // const response = await fetch('/api/onboarding', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify({
+      //     userId: session.user.id,
+      //     ...formData,
+      //   }),
+      // });
+
+      // const data = await response.json();
+
+      // if (!response.ok) {
+      //   throw new Error(data.error || 'Something went wrong');
+      // }
+
+      // Redirect to dashboard after successful onboarding
+      router.push('/dashboard');
+    } catch (err) {
+      setError(err.message);
+    }
   };
+
+  if (status === 'loading') {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#FAFAFA]">
@@ -61,6 +99,12 @@ export default function Onboarding() {
             Help us personalize your learning experience
           </p>
         </div>
+
+        {error && (
+          <div className="bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded relative" role="alert">
+            <span className="block sm:inline">{error}</span>
+          </div>
+        )}
 
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="rounded-md shadow-sm space-y-6">
