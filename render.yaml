@@ -2,7 +2,7 @@ services:
 - type: web
   name: next-js
   runtime: node
-  plan: starter
+  plan: free
   buildCommand: yarn; yarn build
   startCommand: yarn start
   autoDeploy: false
