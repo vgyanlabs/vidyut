@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = 'mongodb+srv://abc:abc@sandbox.ue4rv.mongodb.net/';
+const MONGODB_URI = ''; //Your mongodb url goes here
 
 let cached = global.mongoose;
 
