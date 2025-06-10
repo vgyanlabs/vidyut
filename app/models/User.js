@@ -15,6 +15,15 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  role: {
+    type: String,
+    enum: ['Student', 'Working professional'],
+    required: true,
+  },
+  institution: {
+    type: String,
+    required: true,
+  },
   topic: {
     type: String,
     enum: [

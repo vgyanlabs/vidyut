@@ -4,10 +4,10 @@ import User from '@/app/models/User';
 
 export async function POST(req) {
   try {
-    const { name, email, password } = await req.json();
+    const { name, email, password, role, institution } = await req.json();
 
     // Validate input
-    if (!name || !email || !password) {
+    if (!name || !email || !password|| !role || !institution) {
       return NextResponse.json(
         { error: 'Missing required fields' },
         { status: 400 }
@@ -31,6 +31,8 @@ export async function POST(req) {
       name,
       email,
       password,
+      role,
+      institution,
     });
 
     // Remove password from response
@@ -38,6 +40,8 @@ export async function POST(req) {
       id: user._id,
       name: user.name,
       email: user.email,
+      role: user.role,
+      institution: user.institution,
       isOnboarded: user.isOnboarded,
     };
 
