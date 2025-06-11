@@ -3,6 +3,10 @@
 Welcome to the documentation section for the **Vidyut Learning Platform**. This folder contains structured markdown files representing the product planning, design, and requirement documentation. Each document is crafted to support collaborative development, clear understanding, and smooth delivery of the MVP.
 
 ---
+## UI Theme
+
+See the [Color Palette](./UI/color-palette.md) for standard UI colors.  
+This section will be expanded for more UI theming guidelines.
 
 ##  Documentation Index
 
