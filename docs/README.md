@@ -3,6 +3,11 @@
 Welcome to the documentation section for the **Vidyut Learning Platform**. This folder contains structured markdown files representing the product planning, design, and requirement documentation. Each document is crafted to support collaborative development, clear understanding, and smooth delivery of the MVP.
 
 ---
+
+## Vidyut Logo
+
+You can find the logo file and usage guidelines here: [Vidyut Logo](./UI/vidyut-logo.md).
+
 ## UI Theme
 
 See the [Color Palette](./UI/color-palette.md) for standard UI colors.  
