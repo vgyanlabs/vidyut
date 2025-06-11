@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = ''; //Your mongodb url goes here
+const MONGODB_URI = 'mongodb://localhost:27017/'; //Your mongodb url goes here
 
 let cached = global.mongoose;
 

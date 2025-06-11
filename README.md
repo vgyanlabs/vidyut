@@ -40,3 +40,9 @@ HEX: #00B8D4
     Use sparingly (under 5%)
 
 ![Image](https://github.com/user-attachments/assets/8df4172e-d609-4350-a280-aa37ec5c38f3)
+
+## Project Structure (added)
+
+- components/
+  - Navbar.js
+  - Dashboard.js
