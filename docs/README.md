@@ -4,6 +4,15 @@ Welcome to the documentation section for the **Vidyut Learning Platform**. This 
 
 ---
 
+## Vidyut Logo
+
+You can find the logo file and usage guidelines here: [Vidyut Logo](./UI/vidyut-logo.md).
+
+## UI Theme
+
+See the [Color Palette](./UI/color-palette.md) for standard UI colors.  
+This section will be expanded for more UI theming guidelines.
+
 ##  Documentation Index
 
 ###  Foundation
