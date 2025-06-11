@@ -188,7 +188,7 @@ export default function SignUp() {
                 value={formData.role}
                 onChange={handleChange}
               >
-                <option value="">Select your role</option>
+                <option value="" hidden>Select your role</option>
                 <option value="Student">Student</option>
                 <option value="Working professional">
                   Working professional
