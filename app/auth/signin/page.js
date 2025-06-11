@@ -26,17 +26,7 @@ export default function SignIn() {
       if (result.error) {
         throw new Error(result.error);
       }
-
-      // Get the session to check onboarding status
-      const response = await fetch('/api/auth/session');
-      const session = await response.json();
-
-      // Redirect based on onboarding status
-      if (!session.user.isOnboarded) {
-        router.push('/onboarding');
-      } else {
-        router.push('/dashboard');
-      }
+      router.push('/dashboard');
     } catch (err) {
       setError(err.message);
     }

@@ -99,12 +99,7 @@ export default function SignUp() {
         throw new Error(result.error);
       }
 
-      // Redirect to onboarding if not onboarded
-      if (!data.isOnboarded) {
-        router.push("/onboarding");
-      } else {
-        router.push("/dashboard");
-      }
+      router.push("/dashboard");
     } catch (err) {
       setError(err.message);
     }
