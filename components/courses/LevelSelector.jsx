@@ -6,21 +6,22 @@ const LEVELS = [
 
 export default function LevelSelector({ selectedLevel, onSelectLevel }) {
   return (
-    <div className="w-full flex flex-col items-center mb-10">
-      <span className="text-base font-semibold text-gray-700 mb-3">Select your level</span>
+    <div className="w-full flex flex-col items-center">
+      <h2 className="text-2xl font-bold text-gray-800 mb-2">Select Your Level</h2>
+      <p className="text-gray-600 mb-6">Choose the difficulty level that best matches your current knowledge</p>
       <div className="flex gap-4 w-full justify-center">
-        {LEVELS.map((level, idx) => (
+        {LEVELS.map((level) => (
           <button
             key={level.value}
             type="button"
-            className={`px-7 py-3 rounded-full border-2 text-lg font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 shadow-sm
+            className={`px-7 py-4 rounded-xl border-2 text-lg font-semibold transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2
               ${selectedLevel === level.value
-                ? 'bg-blue-600 text-white border-blue-600 scale-105 shadow-lg'
-                : 'bg-white text-blue-700 border-blue-300 hover:bg-blue-50'}
+                ? 'bg-blue-600 text-white border-blue-600 scale-105 shadow-lg hover:bg-blue-700'
+                : 'bg-white text-gray-700 border-gray-200 hover:border-blue-300 hover:bg-blue-50 hover:scale-102'}
             `}
             aria-pressed={selectedLevel === level.value}
             onClick={() => onSelectLevel(level.value)}
-            style={{ minWidth: 140 }}
+            style={{ minWidth: 160 }}
           >
             {level.label}
           </button>

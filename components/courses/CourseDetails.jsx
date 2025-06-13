@@ -2,23 +2,38 @@ import { FaClock, FaListUl, FaCheckCircle } from 'react-icons/fa';
 
 export default function CourseDetails({ duration, syllabus, prerequisites }) {
   return (
-    <section className="w-full max-w-3xl mx-auto my-10 bg-white/80 rounded-2xl shadow-lg p-8 flex flex-col md:flex-row gap-8 items-start md:items-center border border-gray-100">
-      <div className="flex-1 flex flex-col gap-4">
-        <div className="flex items-center gap-3 text-blue-700 text-lg font-semibold">
-          <FaClock className="text-xl" />
-          <span>Estimated Duration:</span>
-          <span className="font-normal text-gray-700">{duration}</span>
+    <section className="w-full bg-white/90 rounded-2xl shadow-lg p-8 border border-gray-100">
+      <h2 className="text-2xl font-bold text-gray-800 mb-6">Course Information</h2>
+      <div className="space-y-6">
+        <div className="flex items-start gap-4">
+          <div className="mt-1 p-2 bg-blue-50 rounded-lg text-blue-600">
+            <FaClock className="text-xl" />
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-gray-800 mb-1">Duration</h3>
+            <p className="text-gray-600">{duration}</p>
+          </div>
         </div>
-        <div className="flex items-center gap-3 text-blue-700 text-lg font-semibold">
-          <FaListUl className="text-xl" />
-          <span>Syllabus Overview:</span>
-          <span className="font-normal text-gray-700">{syllabus}</span>
+        
+        <div className="flex items-start gap-4">
+          <div className="mt-1 p-2 bg-blue-50 rounded-lg text-blue-600">
+            <FaListUl className="text-xl" />
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-gray-800 mb-1">Syllabus</h3>
+            <p className="text-gray-600">{syllabus}</p>
+          </div>
         </div>
+
         {prerequisites && (
-          <div className="flex items-center gap-3 text-blue-700 text-lg font-semibold">
-            <FaCheckCircle className="text-xl" />
-            <span>Prerequisites:</span>
-            <span className="font-normal text-gray-700">{prerequisites}</span>
+          <div className="flex items-start gap-4">
+            <div className="mt-1 p-2 bg-blue-50 rounded-lg text-blue-600">
+              <FaCheckCircle className="text-xl" />
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-1">Prerequisites</h3>
+              <p className="text-gray-600">{prerequisites}</p>
+            </div>
           </div>
         )}
       </div>
