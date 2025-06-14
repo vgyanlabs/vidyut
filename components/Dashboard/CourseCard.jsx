@@ -17,12 +17,12 @@ export default function CourseCard({ course, i }) {
         </div>
         <div className="mt-4">
           <div className="flex items-center justify-between text-sm mb-1">
-            <span className="text-gray-500">Progress</span>
-            <span className="font-medium text-gray-900">{course.progress}%</span>
+            
+            <span className="font-medium text-gray-900">{course.description}</span>
           </div>
-          <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-            <div className={`h-full ${course.color} rounded-full`} style={{ width: `${course.progress}%` }}></div>
-          </div>
+          {/* <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+           
+          </div> */}
         </div>
       </Link>
     );
